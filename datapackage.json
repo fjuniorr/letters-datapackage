@@ -52,10 +52,12 @@
   "description": "This is a dataset that say if a given letter is a vowel",
   "homepage": "https://github.com/fjuniorr",
   "version": "0.1.0",
+  "owner_org": "secretaria-de-estado-de-planejamento-e-gestao-seplag",
   "contributors": [
     {
       "title": "Francisco Alves",
-      "role": "author"
+      "role": "publisher",
+      "organization": "gabinete-militar-do-governador-gmg"
     }
   ],
   "licenses": [
