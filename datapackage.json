@@ -2,8 +2,8 @@
   "profile": "tabular-data-package",
   "resources": [
     {
-      "name": "letters",
-      "path": "data/letters-vowels.csv",
+      "name": "letters-consonants",
+      "path": "data/letters-consonants.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
@@ -12,29 +12,40 @@
             "type": "integer",
             "format": "default",
             "title": "Incremental counter",
-            "description": "An integer counter for the rows"
+            "description": "An integer counter for the rows."
           },
           {
             "name": "letter",
             "type": "string",
             "format": "default",
             "title": "Alfhabet letter",
-            "description": "A lower case alfabet letter",
-            "constraints": {
-              "enum": ["a", "e", "i", "o", "u"]
-            }
+            "description": "A lower case consonant alfabet letter. `foobar`"
           },
           {
             "name": "vowel",
             "type": "boolean",
             "format": "default",
             "title": "Grammer of letter",
-            "description": "Is the letter a vowel?"
+            "description": "Is the letter a vowel?no"
           }
         ]
-      },
+},
       "dialect": {
       "delimiter": ";",
+      "header": true
+    },
+      "title": "Letters consonants",
+      "format": "csv",
+      "encoding": "UTF-8",
+      "description": "This file contains the actual data with Letters consonants"
+    },
+    {
+      "name": "letters",
+      "path": "data/letters-vowels.csv",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json",
+      "dialect": {
+      "delimiter": ",",
       "header": true
     },
       "title": "This is the actual data",
@@ -65,6 +76,13 @@
       "name": "CC0-1.0",
       "title": "CC0 1.0",
       "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
+  "sources": [
+    {
+      "name": "CBOE VIX Page",
+      "path": "http://www.cboe.com/micro/vix/historical.aspx",
+      "title": "CBOE VIX Page"
     }
   ]
 }

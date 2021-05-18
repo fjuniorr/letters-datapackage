@@ -4,4 +4,11 @@
 
 ## Visão geral
 
-Repositório exemplo de utilização da especificação [Table Schema](https://specs.frictionlessdata.io/table-schema/).
+Repositório exemplo para testes do [dpkgckanmg](https://github.com/dados-mg/dpkgckanmg).
+
+Para instalar as dependências utilizadas no teste
+
+```bash
+git checkout -b reprex1 reprex1
+pip install -r requirements.txt
+```
