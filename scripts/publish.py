@@ -3,4 +3,4 @@ from dpkgckanmg.publish import publish
 from dpkgckanmg.createResource import criarArquivo2
 from dpkgckanmg.updateDataSet import dataSet
 
-publish('/Users/fjunior/Local/cge/dados-mg/letters-datapackage/', os.environ['DADOSMG_DEV'])
+publish('.', os.environ['DADOSMG_DEV'])
